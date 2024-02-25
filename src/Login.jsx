@@ -27,7 +27,7 @@ function Login() {
       await signInWithEmailAndPassword(auth, email, password);
       const user = auth.currentUser;
       if (user && user.emailVerified) {
-        navigate('/'); // Redirect to home page if login is successful and email is verified
+        navigate('/'); 
       } else {
         setError('Please verify your email before logging in.');
       }
